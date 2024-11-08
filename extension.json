@@ -1,0 +1,31 @@
+{
+	"name": "HideActions",
+	"version": "1.0.0",
+	"author": [
+		"Sphynkx"
+	],
+	"url": "http://localhost",
+	"descriptionmsg": "hideactions-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+    "MessagesDirs": {
+	"HideActions": [
+	    "i18n"
+	]
+    },
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\HideActions\\": "."
+	},
+	"HookHandlers": {
+		"HideActionsHooks": {
+			"class": "MediaWiki\\Extension\\HideActions\\Hooks"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "HideActionsHooks"
+	},
+	"manifest_version": 1
+}

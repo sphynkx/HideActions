@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sphynkx"
+		]
+	},
+	"hideactions-desc": "Hide access to actions for unauth.user. Edit page doesnt show wiki-source.",
+	"hideactions-title": "Hide Actions",
+	"hideactions-xsdenied": "Access denied"
+}
