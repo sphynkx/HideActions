@@ -3,5 +3,5 @@
 * Dowload and unpack to Mediawiki's `extensions/` directory.
 * Set in `LocalSettings.php`
 
-    `wfLoadExtension( 'CatList' );`
+    `wfLoadExtension( 'HideActions' );`
     `$wgActions['raw'] = false;`
