@@ -12,7 +12,7 @@ class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 	public function onBeforePageDisplay( $out, $skin ): void {
 
 	    ## The 'raw' doesnt block by this funtion. Need to set `$wgActions['raw'] = false;` in LocalSettings.php
-	    $blockedactions = array('raw', 'delete', 'revert', 'rollback', 'protect', 'unprotect', 'markpatrolled', 'deletetrackback', 'edit', 'blockdiff', 'submit');
+	    $blockedactions = array('raw', 'history', 'delete', 'revert', 'rollback', 'protect', 'unprotect', 'markpatrolled', 'deletetrackback', 'edit', 'blockdiff', 'submit');
 	    $action = $out->getActionName();
 
 	    if ( $out->getUser()->mId == 0 and in_array( $action, $blockedactions) ) {
