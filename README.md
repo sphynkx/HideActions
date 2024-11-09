@@ -3,5 +3,5 @@
 * Dowload and unpack to Mediawiki's `extensions/` directory.
 * Set in `LocalSettings.php`
 
-        `wfLoadExtension( 'HideActions' );`
-        `$wgActions['raw'] = false;`
+        wfLoadExtension( 'HideActions' );
+        $wgActions['raw'] = false;
